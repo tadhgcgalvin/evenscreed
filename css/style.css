@@ -145,20 +145,53 @@ img { max-width: 100%; display: block; }
 
 /* ===== Gallery ===== */
 .gallery { background: var(--mint-100); }
-.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.gallery-item {
+.gallery-carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
   aspect-ratio: 4/3;
   border-radius: var(--radius);
   overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--forest-900);
 }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
-.gallery-item.placeholder {
+.gallery-carousel-track { position: absolute; inset: 0; }
+.gallery-carousel-slide {
+  position: absolute; inset: 0;
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+.gallery-carousel-slide.active { opacity: 1; }
+.gallery-carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+.carousel-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 44px; height: 44px; border-radius: 50%; border: none;
+  background: rgba(12,42,30,.55); color: var(--white);
+  font-size: 1rem; cursor: pointer; z-index: 2;
   display: flex; align-items: center; justify-content: center;
-  background: repeating-linear-gradient(45deg, #dbe6df, #dbe6df 10px, #e5efe8 10px, #e5efe8 20px);
-  color: var(--sage-400); font-size: .85rem; text-align: center;
-  border: 2px dashed var(--sage-400);
+  transition: background .15s ease;
 }
-.gallery-note { margin-top: 1.5rem; font-size: .85rem; color: var(--sage-400); }
+.carousel-arrow:hover { background: var(--emerald); }
+.carousel-arrow.prev { left: 16px; }
+.carousel-arrow.next { right: 16px; }
+.carousel-counter {
+  position: absolute; top: 16px; right: 16px; z-index: 2;
+  background: rgba(12,42,30,.55); color: var(--white);
+  font-size: .8rem; padding: 4px 10px; border-radius: 999px;
+}
+.carousel-dots {
+  position: absolute; bottom: 16px; left: 0; right: 0; z-index: 2;
+  display: flex; justify-content: center; gap: 8px;
+}
+.carousel-dots .dot {
+  width: 9px; height: 9px; border-radius: 999px; border: none; padding: 0;
+  background: rgba(255,255,255,.5); cursor: pointer; transition: all .2s ease;
+}
+.carousel-dots .dot.active { background: var(--white); width: 22px; }
+@media (max-width: 680px) {
+  .gallery-carousel { aspect-ratio: 3/4; }
+  .carousel-arrow { width: 38px; height: 38px; }
+}
 
 /* ===== FAQ ===== */
 .faq-list { max-width: 760px; }
