@@ -9,9 +9,10 @@ step, so it's ready to host directly on GitHub Pages.
 - The "Why EvenScreed" stats/claims are generic placeholders — swap in real
   detail (years trading, insurance provider, certifications, etc.) once you
   confirm them.
-- `evenscreed.ie` is used throughout for canonical/SEO tags — connect the
-  real domain (see below) or point these back at the `github.io` URL if you
-  don't end up registering it.
+- The site's canonical/SEO tags currently point at
+  `https://tadhgcgalvin.github.io/evenscreed/`. If you register `evenscreed.ie`
+  (or another domain) later, update those tags to match — see the custom
+  domain steps below.
 
 ## Publish on GitHub Pages (free)
 
