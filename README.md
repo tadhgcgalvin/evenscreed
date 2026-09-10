@@ -4,23 +4,14 @@ Static site for EvenScreed (liquid screed, underfloor heating screed overlays
 and floor levelling across Munster, Ireland). Plain HTML/CSS/JS — no build
 step, so it's ready to host directly on GitHub Pages.
 
-## Before going live — replace placeholders
+## Still to confirm
 
-Search the project for `[YOUR PHONE NUMBER]` and `[YOUR EMAIL ADDRESS]` and
-replace every instance (they appear in `index.html` in the hero, contact
-section, footer, structured data block, and in `js/main.js`).
-
-```bash
-grep -rn "\[YOUR PHONE NUMBER\]\|\[YOUR EMAIL ADDRESS\]" .
-```
-
-Also update:
-- The placeholder domain `evenscreed.ie` in `index.html`, `robots.txt` and
-  `sitemap.xml` once you know your real domain (or your `github.io` URL).
-- Add real photos — see [`images/README.md`](images/README.md).
 - The "Why EvenScreed" stats/claims are generic placeholders — swap in real
   detail (years trading, insurance provider, certifications, etc.) once you
   confirm them.
+- `evenscreed.ie` is used throughout for canonical/SEO tags — connect the
+  real domain (see below) or point these back at the `github.io` URL if you
+  don't end up registering it.
 
 ## Publish on GitHub Pages (free)
 
@@ -47,16 +38,6 @@ Also update:
    GitHub will create a `CNAME` file in the repo automatically and can
    provision a free HTTPS certificate for you (enable "Enforce HTTPS").
 4. Update `index.html`, `robots.txt` and `sitemap.xml` to use the real domain.
-
-## Contact form note
-
-GitHub Pages only serves static files — there's no server to receive form
-submissions. The current form opens the visitor's email client with the
-enquiry pre-filled (see `js/main.js`). For a proper inbox-delivered form with
-spam filtering, sign up for a free plan on a form backend service and point
-the `<form>` action at it — search for one that suits (e.g. a form-to-email
-API), then follow their embed instructions in place of the current mailto
-script.
 
 ## Local SEO checklist (already built in)
 

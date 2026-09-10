@@ -34,20 +34,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Contact form -> mailto fallback (no backend on GitHub Pages)
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = new FormData(contactForm);
-    const subject = encodeURIComponent(`Quote Request from ${data.get('name')}`);
-    const body = encodeURIComponent(
-      `Name: ${data.get('name')}\n` +
-      `Phone: ${data.get('phone')}\n` +
-      `Email: ${data.get('email')}\n` +
-      `County: ${data.get('county')}\n\n` +
-      `Project details:\n${data.get('message')}`
-    );
-    window.location.href = `mailto:gallavankv@gmail.ie?subject=${subject}&body=${body}`;
-  });
+// Hero image carousel
+const heroSlides = document.querySelectorAll('.hero-slide');
+if (heroSlides.length > 1) {
+  let currentSlide = 0;
+  setInterval(() => {
+    heroSlides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    heroSlides[currentSlide].classList.add('active');
+  }, 4500);
 }
