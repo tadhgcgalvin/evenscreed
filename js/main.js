@@ -48,6 +48,6 @@ if (contactForm) {
       `County: ${data.get('county')}\n\n` +
       `Project details:\n${data.get('message')}`
     );
-    window.location.href = `mailto:info@evenscreed.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:gallavankv@gmail.ie?subject=${subject}&body=${body}`;
   });
 }
