@@ -132,7 +132,18 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-carousel" id="hero-carousel"></div>
+  <div class="hero-carousel" id="hero-carousel">
+    <div class="hero-slide active" style="background-image:url('images/gallery-1.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-2.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-3.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-4.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-5.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-6.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-7.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-8.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-9.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/gallery-10.jpg')"></div>
+  </div>
   <div class="hero-overlay"></div>
   <div class="container hero-inner">
     <p class="hero-tagline">Liquid Screed Contractors</p>
@@ -244,8 +255,23 @@
     <p class="eyebrow">Our Work</p>
     <h2>Recent Screeding Projects</h2>
     <p class="section-intro">A selection of recent liquid screed and floor levelling projects completed across Munster.</p>
-    <div class="gallery-carousel gallery-empty" id="gallery-carousel">
-      <p>New project photos coming soon</p>
+    <div class="gallery-carousel" id="gallery-carousel">
+      <div class="gallery-carousel-track">
+        <div class="gallery-carousel-slide active"><img src="images/gallery-1.jpg" alt="Liquid screed being pumped into place during installation, Munster" loading="eager"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-2.jpg" alt="Liquid screed poured along apartment corridor floor" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-3.jpg" alt="Finished liquid screed floor reflecting natural light through doorway" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-4.jpg" alt="EvenScreed contractor finishing liquid screed in hallway" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-5.jpg" alt="Liquid screed poured in blockwork utility room" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-6.jpg" alt="Liquid screed flooring installation in vaulted living room with fireplace" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-7.jpg" alt="Liquid screed flooring beside apex window with countryside view" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-8.jpg" alt="Liquid screed poured in new-build room under construction" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-9.jpg" alt="Liquid screed flooring poured in vaulted bedroom with apex window" loading="lazy"></div>
+        <div class="gallery-carousel-slide"><img src="images/gallery-10.jpg" alt="Liquid screed flooring installation in double-height hallway with mezzanine" loading="lazy"></div>
+      </div>
+      <button class="carousel-arrow prev" id="gallery-prev" aria-label="Previous photo">&#10094;</button>
+      <button class="carousel-arrow next" id="gallery-next" aria-label="Next photo">&#10095;</button>
+      <div class="carousel-counter"><span id="gallery-counter-current">1</span> / <span id="gallery-counter-total">10</span></div>
+      <div class="carousel-dots" id="gallery-dots"></div>
     </div>
   </div>
 </section>
