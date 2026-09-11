@@ -167,6 +167,12 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow);
   background: var(--forest-900);
 }
+.gallery-carousel.gallery-empty {
+  display: flex; align-items: center; justify-content: center;
+  border: 2px dashed var(--sage-400);
+  background: repeating-linear-gradient(45deg, var(--forest-900), var(--forest-900) 10px, #123526 10px, #123526 20px);
+}
+.gallery-carousel.gallery-empty p { color: var(--mint-text); font-size: .95rem; margin: 0; }
 .gallery-carousel-track { position: absolute; inset: 0; }
 .gallery-carousel-slide {
   position: absolute; inset: 0;

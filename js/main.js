@@ -47,7 +47,8 @@ if (heroSlides.length > 1) {
 
 // Gallery carousel (manual arrows/dots + auto-advance)
 const galleryCarousel = document.getElementById('gallery-carousel');
-if (galleryCarousel) {
+const gallerySlideCount = galleryCarousel ? galleryCarousel.querySelectorAll('.gallery-carousel-slide').length : 0;
+if (galleryCarousel && gallerySlideCount > 0) {
   const gallerySlides = galleryCarousel.querySelectorAll('.gallery-carousel-slide');
   const dotsContainer = document.getElementById('gallery-dots');
   const counterCurrent = document.getElementById('gallery-counter-current');

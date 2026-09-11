@@ -2,19 +2,22 @@
 
 Drop your images into this `images/` folder, then update `index.html`:
 
-## Gallery (6 photos)
-Each gallery slot in the "Recent Screeding Projects" section is currently a
-placeholder `<div class="gallery-item placeholder">`. Replace each one with:
+## Gallery
+The "Recent Screeding Projects" section (`#gallery-carousel`) is currently an
+empty placeholder (`.gallery-empty`) — no photos are wired in. To add photos
+back in, replace it with a `.gallery-carousel-track` of
+`.gallery-carousel-slide` divs (one `<img>` each, first one gets `class="active"`),
+plus `#gallery-prev`/`#gallery-next` arrow buttons, a `#gallery-counter-current`/
+`#gallery-counter-total` counter, and an empty `#gallery-dots` div (the JS in
+`js/main.js` auto-generates the dot buttons). See the git history for the
+exact markup used previously if useful as a reference.
 
-```html
-<div class="gallery-item">
-  <img src="images/gallery-1.jpg" alt="Liquid screed installation in Cork kitchen extension" loading="lazy">
-</div>
-```
+The hero carousel (`#hero-carousel`) works the same way with `.hero-slide`
+divs using inline `background-image` styles — it's also currently empty.
 
-Repeat for `gallery-2.jpg` through `gallery-6.jpg`. Use descriptive,
-keyword-rich file names and `alt` text (e.g. "underfloor heating screed
-overlay Limerick new build") — this helps Google Images and local SEO.
+Use descriptive, keyword-rich file names and `alt` text (e.g. "underfloor
+heating screed overlay Limerick new build") — this helps Google Images and
+local SEO.
 
 ## Social preview image
 Add a 1200x630px image named `og-cover.jpg` — this is what shows up when the
