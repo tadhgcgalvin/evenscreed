@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tadhgcgalvin.github.io/evenscreed/sitemap.xml
+Sitemap: https://evenscreed.com/sitemap.xml
