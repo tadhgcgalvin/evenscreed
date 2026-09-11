@@ -127,7 +127,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===== Services ===== */
-.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 .card {
   background: var(--mint-100);
   border: 1px solid var(--border);
@@ -136,7 +136,6 @@ img { max-width: 100%; display: block; }
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-.card-icon { font-size: 2rem; margin-bottom: .5em; }
 .card p { margin-bottom: 0; }
 
 /* ===== Why us ===== */

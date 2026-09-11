@@ -1,8 +1,8 @@
 # EvenScreed website
 
-Static site for EvenScreed (liquid screed, underfloor heating screed overlays
-and floor levelling across Munster, Ireland). Plain HTML/CSS/JS — no build
-step, so it's ready to host directly on GitHub Pages.
+Static site for EvenScreed (liquid screed and underfloor heating screed
+overlays across Munster, Ireland). Plain HTML/CSS/JS — no build step, so
+it's ready to host directly on GitHub Pages.
 
 ## Still to confirm
 
